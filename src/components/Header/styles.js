@@ -1,0 +1,45 @@
+import styled from "styled-components";
+
+export const HeaderContainer = styled.header`
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin: 2.8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const SearchField = styled.div`
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    margin-left: 0.5rem; //11px
+    padding: 0.3rem; //9px
+    background: #343539;
+    color: var(--primary-white);
+    font-size: 1rem; //16px
+    border: none;
+
+    ::-webkit-input-placeholder {
+      color: var(--gray-300);
+      font-size: 1rem; //16px
+    }
+  }
+`;
+
+export const ButtonDarkMode = styled.button`
+  margin-right: 106px;
+  background: transparent;
+  border: 0;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`;
