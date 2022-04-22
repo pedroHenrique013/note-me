@@ -1,11 +1,12 @@
+import {AppContent} from './styles'
 import { GlobalStyle} from '../../styles/global'
 
 function App() {
 
   return (
-    <div className="App">
+    <AppContent>
       <GlobalStyle />
-    </div>
+    </AppContent>
   )
 }
 
