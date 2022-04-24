@@ -1,20 +1,22 @@
 import trashImg from "../../assets/trash.svg";
 import { NoteListContent, NotesItem, FooterNote } from "./styles";
 
-export function NoteCard() {
+export function NoteCard({notes, removeNotes}) {
   return (
     <NoteListContent>
-      <NotesItem>
+      {notes.map(note => (
+        <NotesItem key={note.id}>
         <textarea
             placeholder="Insira sua nota aqui" 
         />
         <FooterNote>
-          <span>04/04/22</span>
-          <button>
+          <span>{new Date().toLocaleDateString("pt-BR")}</span>
+          <button onClick={() => removeNotes(note.id)}>
             <img src={trashImg} alt="Icone de uma lixeira" />
           </button>
         </FooterNote>
-      </NotesItem>
+        </NotesItem>
+      ))}
     </NoteListContent>
   );
 }
