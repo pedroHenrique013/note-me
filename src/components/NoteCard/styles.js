@@ -5,7 +5,7 @@ export const NoteListContent = styled.div`
     grid-template-columns: repeat(auto-fill, 286px);
 `;
 
-export const NotesItem = styled.div`
+export const NotesItem = styled.form`
     width: 264px;
     height: 240px;
     margin-top: 63px;
@@ -37,13 +37,26 @@ export const NotesItem = styled.div`
         font-size: 1.1rem;
     }
 
+    small {
+        font-size: 0.7rem;
+    }
+
 `;
 
 export const FooterNote = styled.div`
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     
+
+    .button-save {
+        width: 30%;
+        padding: 0.3rem 0;
+        margin-left: auto;
+        background: var(--semantic-green);
+        border: none;
+        border-radius: 5px;
+    }
 
     button {
         width: 18px;
