@@ -30,7 +30,6 @@ function App() {
   function handleAddNote() {
     const newNote = { id: Math.floor(Math.random() * 1000), content: "" };
     setNotes([newNote, ...notes]);
-
   }
 
   function handleDeleteNote(deleteNote) {

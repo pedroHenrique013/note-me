@@ -1,6 +1,6 @@
-import {SideBarContainer, SideBarContent} from './styles';
+import { SideBarContainer, SideBarContent } from "./styles";
 
-export function Sidebar({addNotes}) {
+export function Sidebar({ addNotes }) {
   return (
     <SideBarContainer>
       <SideBarContent>

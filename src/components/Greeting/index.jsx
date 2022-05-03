@@ -1,4 +1,4 @@
-import {GreetingContent} from './styles';
+import { GreetingContent } from "./styles";
 
 export function Greeting() {
   return (
