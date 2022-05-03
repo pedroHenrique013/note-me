@@ -22,8 +22,8 @@ export const SearchField = styled.div`
     width: 100%;
     margin-left: 0.5rem; //11px
     padding: 0.3rem; //9px
-    background: #343539;
-    color: var(--primary-white);
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
     font-size: 1rem; //16px
     border: none;
 
@@ -38,6 +38,14 @@ export const ButtonDarkMode = styled.button`
   margin-right: 106px;
   background: transparent;
   border: 0;
+  
+
+  .btn-mode {
+    width: 30px;
+    height: 30px;
+    background-image: url(${({ theme }) => theme.temamode});
+    background-size: cover;
+  }
 
   &:hover {
     filter: brightness(0.8);

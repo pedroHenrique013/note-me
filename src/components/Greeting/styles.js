@@ -5,7 +5,7 @@ export const GreetingContent = styled.div`
   
   
   h1 {
-    color: var(--primary-white);
+    color: ${({ theme }) => theme.text};
   }
 
   p {

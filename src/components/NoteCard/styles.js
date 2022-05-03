@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NoteListContent = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 286px);
+
 `;
 
 export const NotesItem = styled.form`
@@ -21,7 +22,7 @@ export const NotesItem = styled.form`
         width: 100%;
         height: 100%;
         background: transparent;
-        color: var(--primary-white);
+        color: ${({ theme }) => theme.text};
         padding: 32px 26px 52 26px;
         font-size: 1.3rem;
         font-weight: 500;
@@ -47,16 +48,7 @@ export const FooterNote = styled.div`
     display: flex;
     align-items: center;
     margin-top: 0.2rem;
-    
-
-    .button-save {
-        width: 30%;
-        padding: 0.3rem 0;
-        margin-left: auto;
-        background: var(--semantic-green);
-        border: none;
-        border-radius: 5px;
-    }
+    color: ${({ theme }) => theme.text};
 
     button {
         width: 18px;
@@ -70,9 +62,12 @@ export const FooterNote = styled.div`
         }
     }
 
-    img {
-        width: 18px;
-        height: 18px;
-        
+    .btn-delete {
+        width: 20px;
+        height: 22px;
+        background-image: url(${({ theme }) => theme.deletenote});
+        background-size: cover;
+
     }
+
 `;

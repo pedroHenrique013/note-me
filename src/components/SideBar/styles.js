@@ -6,7 +6,7 @@ export const SideBarContainer = styled.aside`
     grid-row-start: 1;
     grid-row-end: 3;
     
-    background: var(--primary-midnight);
+    background: ${({ theme }) => theme.body};
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     position: fixed;
 
@@ -18,8 +18,17 @@ export const SideBarContent = styled.div`
     flex-direction: column;
     align-items: center;
     
-    img:nth-child(1) {
+    .img-logo {
+        background-image: url(${({ theme }) => theme.logo});
         margin: 29px 0 200px 0;
+        width: 48px;
+        height: 48px;
+        
+    }
+
+    .add-note {
+        background-image: url(${({ theme }) => theme.addnote});
+        background-size: cover;
         width: 48px;
         height: 48px;
     }
