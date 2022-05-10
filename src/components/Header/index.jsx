@@ -1,5 +1,5 @@
 import searchIcon from "../../assets/search.svg";
-import sunIcon from "../../assets/sun.svg";
+
 
 import { HeaderContainer } from "./styles";
 import { SearchField } from "./styles";

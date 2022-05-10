@@ -1,19 +1,28 @@
+import logoLightImg from '../../src/assets/logo-light.svg';
+import logoDarkImg from '../../src/assets/logo-dark.svg';
+import plusImg from '../../src/assets/plus.svg';
+import moonImg from '../../src/assets/moon.svg';
+import sunImg from '../../src/assets/sun.svg';
+import trashDarkImg from '../../src/assets/trash-dark.svg';
+import plusLight from '../../src/assets/plus-light.svg';
+import trashLight from '../../src/assets/trash.svg';
+
 export const lightTheme = {
     body: "#FFFDFA",
     text: "#3C3D43",
     toggleBorder: "#fff",
-    logo:"../../../src/assets/logo-light.svg",
-    addnote:"../../../src/assets/plus.svg",
-    temamode:"../../../src/assets/moon.svg",
-    deletenote:"../../../src/assets/trash-dark.svg"
+    logo: logoLightImg,
+    addnote: plusImg,
+    temamode:moonImg,
+    deletenote:trashDarkImg,
   };
   
   export const darkTheme = {
     body: "#343539",
     text: "#fff",
-    logo:"../../../src/assets/logo-dark.svg",
-    addnote:"../../../src/assets/plus-light.svg",
-    temamode:"../../../src/assets/sun.svg",
-    deletenote:"../../../src/assets/trash.svg"
+    logo: logoDarkImg,
+    addnote:plusLight,
+    temamode:sunImg,
+    deletenote:trashLight
     
   };

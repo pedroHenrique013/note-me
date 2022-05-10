@@ -26,6 +26,8 @@ export const SearchField = styled.div`
     color: ${({ theme }) => theme.text};
     font-size: 1rem; //16px
     border: none;
+    border-bottom: 0.5px solid #8C8A90;
+    border-radius: 0.25rem; 
 
     ::-webkit-input-placeholder {
       color: var(--gray-300);

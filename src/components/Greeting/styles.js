@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const GreetingContent = styled.div`
-  
-  
+
   
   h1 {
     color: ${({ theme }) => theme.text};
